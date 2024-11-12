@@ -1,0 +1,30 @@
+.intestazione{
+    background-color: darkviolet;
+    text-align: center;
+    color: white;
+    padding: 16px;
+
+    border-style: solid;
+    border-color: red;
+    border-width: 8px;
+    border-radius: 30px;
+}
+
+
+.link-navigazione{
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.tricheco{
+    position: absolute;
+    top: 700px;
+    left: 500px;
+}
+
+.nome-bio{
+    color: rgb(226, 238, 50);
+}
