@@ -1,16 +1,44 @@
 
+let idrogeno = {};
 
-let contenitore = document.getElementById('contenitore');
+idrogeno.simbolo = 'H';
+idrogeno.numero = 1;
+idrogeno.nome = 'Idrogeno';
 
-contenitore.style.borderStyle = 'solid'
+let elio = {};
 
-let cella = document.createElement('div');
+elio.simbolo = 'He';
+elio.numero = 2;
+elio.nome = 'Elio';
 
-let numeroAtomico = document.createElement('p');
-numeroAtomico.innerText = '1';
 
-let simbolo = document.createElement('a');
-simbolo.innerText = 'H';
+let elementi = [idrogeno, elio];
 
-let nome = document.createElement('p');
-nome.innerText = 'Idrogeno';
+for (const element of elementi) {
+    let contenitore = document.getElementById('contenitore');
+
+
+    let cella = document.createElement('div');
+    cella.style.borderStyle = 'solid';
+    cella.style.width = '70px'
+
+    let numeroAtomico = document.createElement('p');
+    numeroAtomico.innerText = element.numero;
+    cella.appendChild(numeroAtomico);
+
+    let simbolo = document.createElement('a');
+    simbolo.innerText = element.simbolo;
+    cella.appendChild(simbolo);
+
+    let nome = document.createElement('p');
+    nome.innerText = element.nome;
+    cella.appendChild(nome);
+
+    contenitore.appendChild(cella);
+}
+
+
+
+
+
+
